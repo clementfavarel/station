@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réservation Bouteilles | Station CEPHISMER</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/scripts.js" defer></script>
+    <link rel="shortcut icon" href="./img/cephismer.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="./php/reservation.php" method="post" class="form">
+        <div class="row" style="padding: 1rem">
+          <img class="logo" src="./img/cephismer.png" alt="CEPHISMER" />
+          <h1>Réservation de bouteilles</h1>
+          <img class="logo" src="./img/cephismer.png" alt="CEPHISMER" />
+        </div>
+        <div class="column" style="justify-content: space-evenly; gap: 1rem">
+          <div class="row" style="width: 50%; height: fit-content">
+            <div class="column">
+              <div class="input-group">
+                <label for="email">Email Intradef</label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="input-group">
+                <label for="unite">Unité</label>
+                <input type="text" name="unite" id="unite" required />
+              </div>
+            </div>
+            <div class="column">
+              <div class="input-group">
+                <label for="operation">Opération</label>
+                <select name="operation" id="operation" required>
+                  <option value="" style="display: none">
+                    Choisir une opération
+                  </option>
+                  <option value="rincage">Rinçage</option>
+                  <option value="gonflage">Gonflage</option>
+                  <option value="rincage_gonflage">Rinçage et Gonflage</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="date_depot">Date de dépôt</label>
+                <input type="date" name="date_depot" id="date_depot" required />
+              </div>
+            </div>
+          </div>
+          <div
+            style="width: 70%; height: fit-content; display: flex; gap: 3rem"
+          >
+            <div class="col">
+              <h2>N° de Lyres</h2>
+              <div id="numerosLyres"></div>
+            </div>
+            <div class="col">
+              <h2>N° de Bi-Mono Blocs</h2>
+              <div id="numerosBlocs"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row" style="justify-content: center">
+          <button type="submit" name="submit" class="btn">Valider</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

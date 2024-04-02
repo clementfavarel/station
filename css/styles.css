@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f4f4f4;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+.form {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+}
+.row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex: 1;
+}
+#numerosLyres,
+#numerosBlocs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.logo {
+  width: 80px;
+  height: 80px;
+}
+.input-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+label {
+  margin-left: 10px;
+}
+input,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+.subtitle {
+  text-align: center;
+}
+.btn {
+  width: 10%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 1px solid #010101;
+  border-radius: 10px;
+  background-color: #010101;
+  color: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #fff;
+  color: #010101;
+}
